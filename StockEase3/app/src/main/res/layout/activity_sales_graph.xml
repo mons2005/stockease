@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="12dp">
+
+    <!-- Heading at top center -->
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📊 Sales Graph"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Back Button below heading, aligned to start -->
+    <Button
+        android:id="@+id/btnBackToHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Back"
+        android:backgroundTint="#424242"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:elevation="4dp"
+        android:layout_below="@id/tvHeading"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <!-- WebView centered horizontally below the Back button -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnBackToHistory"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="8dp" />
+</RelativeLayout>
